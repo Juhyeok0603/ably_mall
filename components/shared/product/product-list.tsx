@@ -1,8 +1,9 @@
 import React from 'react'
 
 import ProductCard from './product-card'
+import type { Product } from '@/types'
 
-const ProductList = ({ data }: { data: any }) => {
+const ProductList = ({ data }: { data: Product[] }) => {
   return (
     <>
       {data.length > 0 ? (
